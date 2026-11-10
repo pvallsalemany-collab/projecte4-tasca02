@@ -4,4 +4,6 @@
 ```
 docs: inicialitza la repositori de prova per tasca 2
 ```
+He fet el ptimer commit
+![Imatge primer_commit]()
 2. 
