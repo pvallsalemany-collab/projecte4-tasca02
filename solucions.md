@@ -1,9 +1,10 @@
 # Part 1: Bones pràctiques en la documentació de commits
+0. He creat el repositori públic
 
 1. Fes el teu primer commit seguint la convenció de missatges de commit que hem vist abans:
 ```
 docs: inicialitza la repositori de prova per tasca 2
 ```
 He fet el ptimer commit
-![Imatge primer_commit]()
+![Imatge primer_commit](img/primers_commits.png)
 2. 
