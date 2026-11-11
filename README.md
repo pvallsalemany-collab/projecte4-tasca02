@@ -1,4 +1,3 @@
-# Projecte4-tasca02
+# Projecte 4 - Tasca 02
 
-Aquest reposirori funciona a base d'una prova sobre bones pr``actiques de Commit i revert + reset
-
+Repositori de pràctiques per treballar l'historial de Git.
