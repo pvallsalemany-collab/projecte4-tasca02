@@ -206,3 +206,18 @@ Evidència amb el **Git Graph**
 git add solucions.md img/
 git commit -m "docs: documenta punt 5 exploració de commit"
 ```
+![commit de seguretat per realitzar el reset](img/commi_seguretat_part5_pendent.png)
+
+2. Abans de fer el reset també comprovo el historial actual executant:
+```
+git log --oneline
+```
+![comprovació gi grapth el commit](img/git_log_--online_comprovació_part5.png)
+
+3. Desa els canvis que tinc pendents en solucion..md
+```
+git add solucions.md
+git commit -m "docs: afegeix captura prèvia al reset"
+´´´
+
+
