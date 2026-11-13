@@ -121,7 +121,7 @@ git restore 00-installer-config.yaml
 
 ![fent un git restore](img/git_restore.png)
 
-El canvi que he vist
+El canvi que he vist <br>
 ![canvi](img/consequencia_git_restore.png)
 
 > [!NOTE]
@@ -214,10 +214,34 @@ git log --oneline
 ```
 ![comprovació gi grapth el commit](img/git_log_--online_comprovació_part5.png)
 
-3. Desa els canvis que tinc pendents en solucion..md
+3. Desa els canvis que tinc pendents en solucion.md
 ```
 git add solucions.md
 git commit -m "docs: afegeix captura prèvia al reset"
-´´´
+```
+![commit a solucions.md per fer els canvis pendents](img/git_add_solucions.md.png)
 
+4. Modifica el fitxer `00-installer.config.yaml` afegint: # prova reset
+![imatge de #prova reset dins del fitxer .yaml abaix de tot](img/prova_yaml.png)
 
+5. Faig un commit de prova executant
+```
+git add 00-installer-config.yaml
+git commit -m "test: commit temporal per provar reset"
+```
+![mostrar prova_test el commit](img/commi_temporal_provar_test.png)
+
+6. Mostrar historial actual abans de fer reset
+```
+git log --oneline
+```
+![Comprovar el l'historial](img/RESET_NO_PORFA.png)
+
+7. Ara sí esborro el últim commit executant:
+```
+git reset --hard HEAD~1
+```
+![Cuidado un RESET!](img/Cuidado_RESET.png)
+
+Després d'executar `git reset --hard HEAD~1`, el fitxer ` 00-installer-config.yaml` ha tornat exactament al seu estat anterior (s'han eliminat els canvis de prova) i l'últim commit ha desaparegut de l'historial. Comprovo amb git status que el directori de treball queda net:
+![Reset en el YAML estat net com abans](img/RESET_YAML.png)
